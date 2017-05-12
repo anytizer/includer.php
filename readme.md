@@ -12,4 +12,10 @@ Auto include class files from various sources and styles
     spl_autoload_register(array(new \backend\spl_include(__LIBRARIES_DIR__."/classes"), "psr0"));
 
 Only call the includer of your style.
-eg. namespaced_inc_dot() calls: class.CLASSNAME.inc.php
+
+eg. *namespaced_inc_dot()* calls: *class.CLASSNAME.inc.php*.
+
+
+## Installation
+
+    composer require anytizer/spl_include.php=dev-master
