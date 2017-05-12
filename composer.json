@@ -1,21 +1,23 @@
 {
-	"name": "anytizer/spl_include.php",
-	"description": "Class auto includer",
-	"type": "library",
-	"keywords": [
-		"includer",
-	],
-	"authors": [
-		{
-			"role": "Developer"
-		}
-	],
-	"minimum-stability": "stable",
-	"prefer-stable": true,
-	"require": {
-		"php": ">=7.0"
-	},
-	"autoload": {
-		"files": ["src/libraries/spl_include.php"]
-	}
+  "name": "anytizer/spl_include.php",
+  "description": "Class auto includer",
+  "type": "library",
+  "keywords": [
+    "includer"
+  ],
+  "authors": [
+    {
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "files": [
+      "src/libraries/spl_include.php"
+    ]
+  }
 }
