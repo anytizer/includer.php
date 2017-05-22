@@ -1,4 +1,6 @@
 <?php
+namespace backend;
+
 class spl_include
 {
     private $path;
