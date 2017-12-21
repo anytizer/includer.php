@@ -17,7 +17,7 @@
   },
   "autoload": {
     "files": [
-      "src/libraries/spl_include.php"
+      "src/libraries/classes/backend/class.spl_include.inc.php"
     ]
   }
 }

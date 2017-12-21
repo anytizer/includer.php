@@ -18,4 +18,4 @@ eg. *namespaced_inc_dot()* calls: *class.CLASSNAME.inc.php*.
 
 ## Installation
 
-    composer require anytizer/spl_include.php=dev-master
+    composer require anytizer/spl_include.php:dev-master
