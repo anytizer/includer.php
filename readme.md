@@ -8,6 +8,7 @@ Auto include class files from various sources and styles
 
     <?php
     require_once(__LIBRARIES_DIR__."/classes/backend/class.spl_include.inc.php");
+
     spl_autoload_register(array(new \backend\spl_include(__LIBRARIES_DIR__."/classes"), "namespaced_inc_dot"));
     spl_autoload_register(array(new \backend\spl_include(__LIBRARIES_DIR__."/classes"), "psr0"));
 
