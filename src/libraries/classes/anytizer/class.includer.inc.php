@@ -1,5 +1,5 @@
 <?php
-namespace anytizer\backend;
+namespace anytizer;
 
 class includer
 {
