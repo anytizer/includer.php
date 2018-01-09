@@ -1,7 +1,7 @@
 <?php
 namespace anytizer\backend;
 
-class anytizer_include
+class includer
 {
     private $path;
     private $class_name;

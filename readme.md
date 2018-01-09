@@ -1,22 +1,24 @@
-# spl_include.php
+# includer.php
 
-SPL register Auto Include
+SPL autoload registeration of custom PHP Class files.
 
-Auto include class files from various sources and styles
 
 ## Example
 
-    <?php
-    require_once(__LIBRARIES_DIR__."/classes/backend/class.spl_include.inc.php");
+	<?php
+	require_once("../vendor/autoload.php");
+	require_once("../src/libraries/classes/anytizer/backend/class.includer.inc.php");
+	
+	use anytizer\backend\includer;
+	spl_autoload_register(array(new includer("libraries/classes"), "namespaced_inc_dot"));
 
-    spl_autoload_register(array(new \backend\spl_include(__LIBRARIES_DIR__."/classes"), "namespaced_inc_dot"));
-    spl_autoload_register(array(new \backend\spl_include(__LIBRARIES_DIR__."/classes"), "psr0"));
 
 Only call the includer of your style.
 
-eg. *namespaced_inc_dot()* calls: *class.CLASSNAME.inc.php*.
+ * *namespaced_inc_dot()* calls: __namespace/class.{name}.inc.php__.
+ * *prs0()* calls: __namespace/{name}__.
 
 
 ## Installation
 
-    composer require anytizer/spl_include.php:dev-master
+    composer require anytizer/includer.php:dev-master
