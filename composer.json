@@ -1,5 +1,5 @@
 {
-  "name": "anytizer/spl_include.php",
+  "name": "anytizer/includer.php",
   "description": "Class auto includer",
   "type": "library",
   "keywords": [
