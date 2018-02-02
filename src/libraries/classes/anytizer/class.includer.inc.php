@@ -28,18 +28,24 @@ class includer
 		return $namespace;
 	}
 	
+	/**
+	 * namespace/class.{name}.inc.php
+	 */
 	private function filename_normal($namespace="")
 	{
 		return "{$this->path}/{$namespace}/class.{$this->class_name}.inc.php";
 	}
 	
+	/**
+	 * namespace/{name}.php
+	 */
 	private function filename_psr0($class_name)
 	{
 		return "{$class_name}.php";
 	}
 
 	/**
-	 * namespace/class.{name}.inc.php
+	 * Look for namespace/class.{name}.inc.php
 	 */
     public function namespaced_inc_dot(string $class_name)
     {
@@ -53,17 +59,13 @@ class includer
     }
 	
 	/**
-	 * @todo Untested
+	 * @todo Not tested
 	 */
 	public function psr0(string $class_name)
     {
-        $chunks = explode("\\", $class_name);
-        $class_name = array_pop($chunks);
-        $namespace = implode("/", $chunks);
-        if(!$namespace) $namespace = ".";
+        $namespace = $this->get_namespace($class_name);
 
-        $path = $this->path;
-		$file = "{$path}/{$namespace}/{$class_name}.php";
+		$file = $this->filename_psr0($namespace);
 		if(is_file($file))
 		{
 			require_once($file);
