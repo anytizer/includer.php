@@ -1,3 +1,6 @@
+cases\FlyTogether
+ [x] Include double upper cases
+
 cases\Inclusion
  [x] Include
 
