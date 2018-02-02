@@ -6,8 +6,8 @@ namespace examples\deep\bottom;
  */
 class hypoxia
 {
-	public function deal(): bool
+	public function breathe(): string
 	{
-		return true;
+		return "water";
 	}
 }

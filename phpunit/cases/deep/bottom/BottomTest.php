@@ -9,8 +9,8 @@ class BottomTest extends TestCase
 	public function testHypoxia()
 	{
 		$class = new hypoxia();
-		$result = $class->deal();
+		$result = $class->breathe();
 		
-		$this->assertTrue($result);
+		$this->assertEquals("water", $result);
 	}
 }

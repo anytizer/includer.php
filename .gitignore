@@ -1,1 +1,3 @@
-/phpunit/phpunit.phar
+.idea/
+nbproject/
+vendor/
