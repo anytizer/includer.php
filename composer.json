@@ -1,17 +1,17 @@
 {
   "name": "anytizer/includer.php",
-  "description": "Class auto includer",
+  "description": "Custom SPL autoload registration",
   "type": "library",
   "keywords": [
-    "includer"
+    "includer",
+    "autoload",
+    "spl"
   ],
   "authors": [
     {
       "role": "Developer"
     }
   ],
-  "minimum-stability": "stable",
-  "prefer-stable": true,
   "require": {
     "php": ">=7.0"
   },
