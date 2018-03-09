@@ -17,7 +17,7 @@
   },
   "autoload": {
     "files": [
-      "src/libraries/classes/anytizer/class.includer.inc.php"
+      "src/libraries/classes/anytizer/includer.php"
     ]
   }
 }

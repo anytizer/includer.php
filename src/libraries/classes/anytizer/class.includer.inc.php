@@ -3,6 +3,7 @@ namespace anytizer;
 
 class includer
 {
+	private $debug = false;
     private $path;
     private $class_name;
     public function __construct(string $path)
@@ -39,9 +40,17 @@ class includer
 	/**
 	 * namespace/{name}.php
 	 */
-	private function filename_psr0($class_name)
+	private function filename_psr0($namespace)
 	{
-		return "{$class_name}.php";
+		return "{$this->path}/{$namespace}/{$this->class_name}.php";
+	}
+	
+	/**
+	 * namespace/{name}.php
+	 */
+	private function filename_psr4($namespace)
+	{
+		return "{$this->path}/{$namespace}/{$this->class_name}.php";
 	}
 
 	/**
@@ -56,6 +65,10 @@ class includer
 		{
 			require_once($file);
 		}
+		else
+		{
+			if($this->debug) echo "\r\n", "Not found: ", $file;
+		}
     }
 	
 	/**
@@ -69,6 +82,28 @@ class includer
 		if(is_file($file))
 		{
 			require_once($file);
+		}
+		else
+		{
+			if($this->debug) echo "\r\n", "Not found: ", $file;
+		}
+    }
+	
+	/**
+	 * @todo Not tested
+	 */
+	public function psr4(string $class_name)
+    {
+        $namespace = $this->get_namespace($class_name);
+
+		$file = $this->filename_psr4($namespace);
+		if(is_file($file))
+		{
+			require_once($file);
+		}
+		else
+		{
+			if($this->debug) echo "\r\n", "Not found: ", $file;
 		}
     }
 }
