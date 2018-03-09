@@ -4,6 +4,9 @@ cases\FlyTogether
 cases\Inclusion
  [x] Include
 
+cases\Psr0
+ [x] Include
+
 cases\Psr4
  [x] Include
 
