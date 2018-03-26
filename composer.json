@@ -1,6 +1,6 @@
 {
   "name": "anytizer/includer.php",
-  "description": "Custom SPL autoload registration",
+  "description": "SPL autoload registration for custom paths",
   "type": "library",
   "keywords": [
     "includer",
@@ -9,18 +9,19 @@
   ],
   "authors": [
     {
+      "name": "Developer",
       "role": "Developer"
     }
   ],
   "require": {
-    "php": ">=7.0"
+    "php": "^7.1"
   },
   "autoload": {
     "files": [
       "src/anytizer/includer.php"
     ],
-	"psr-4": {
-		"anytizer\\": "src/anytizer"
-	}
+    "psr-4": {
+      "anytizer\\": "src/anytizer"
+    }
   }
 }
