@@ -12,7 +12,8 @@ See on [spl-autoload-register](http://php.net/manual/en/function.spl-autoload-re
     use anytizer\includer;
 
     spl_autoload_register(array(new includer("path/libraries/classes"), "namespaced_inc_dot"));
-    spl_autoload_register(array(new includer("other/path/classes"), "namespaced_inc_dot"));
+    spl_autoload_register(array(new includer("/other/path/classes"), "namespaced_inc_dot"));
+    spl_autoload_register(array(new includer("other/classes/psr4"), "psr4"));
 
 
 Only call the includer of your style.

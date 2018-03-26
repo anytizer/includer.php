@@ -17,7 +17,10 @@
   },
   "autoload": {
     "files": [
-      "src/libraries/classes/anytizer/includer.php"
-    ]
+      "src/anytizer/includer.php"
+    ],
+	"psr-4": {
+		"anytizer\\": "src/anytizer"
+	}
   }
 }
