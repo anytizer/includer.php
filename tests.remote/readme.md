@@ -1,3 +1,3 @@
 ## Installation
 
-	compose require anytizer/includer.php
+	composer require anytizer/includer.php
