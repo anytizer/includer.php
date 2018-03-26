@@ -1,0 +1,11 @@
+{
+  "name": "anytizer/includer.php",
+  "description": "SPL autoload registration for custom paths",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "anytizer\\": "../src/anytizer"
+    }
+  }
+}

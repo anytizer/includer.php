@@ -1,5 +1,4 @@
 .idea/
 nbproject/
 vendor/
-/tests.remote/composer.lock
-/composer.lock
+/**/composer.lock
