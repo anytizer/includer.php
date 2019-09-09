@@ -63,7 +63,7 @@ class includer
 		$file = $this->filename_normal($namespace);
 		if(is_file($file))
 		{
-			require_once($file);
+			require_once $file;
 		}
 		else
 		{
@@ -81,7 +81,7 @@ class includer
 		$file = $this->filename_psr0($namespace);
 		if(is_file($file))
 		{
-			require_once($file);
+			require_once $file;
 		}
 		else
 		{
@@ -99,7 +99,7 @@ class includer
 		$file = $this->filename_psr4($namespace);
 		if(is_file($file))
 		{
-			require_once($file);
+			require_once $file;
 		}
 		else
 		{
